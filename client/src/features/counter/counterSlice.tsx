@@ -12,15 +12,17 @@ const counterSlice = createSlice( {
     name: "counterSlice",
     initialState,
     reducers: {
-        incrementCounter( state: number, action: PayloadAction<number | undefined> ) {
+        incrementCounter( state, action: PayloadAction<number | undefined> ) {
             const incrementAcount = action.payload ?? 1;
             state.theCounter += incrementAcount;
         },
         decrementCounter( state, action: PayloadAction<number | undefined> ) {
             const decrementAcount = action.payload ?? 1;
+            // eslint-disable-next-line no-param-reassign
             state.theCounter -= decrementAcount;
         },
         resetCounter( state ) {
+            // eslint-disable-next-line no-param-reassign
             state.theCounter = 0;
         },
     },
