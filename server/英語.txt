@@ -1,0 +1,83 @@
+Controllers
+Defining
+decorating
+with
+accepts
+path
+handled
+incoming
+引数
+injected
+constructors
+via
+dependency
+factory
+must
+usable
+available
+transfer
+
+Defined as providers. 
+Not all providers are services
+
+pipe operate on the arguments to be processed by the route handler, jsut before the handler is called.
+
+perform
+transformation
+data validation
+either
+original
+modified
+which
+will
+throw
+exceptions
+be
+by
+parsed
+
+pipes can throw exceptions.
+exceptions thrown will be handled by NestJS and parsed into an error response.
+
+Defaulet Pipees in NestJS
+
+ValidationPipe
+ParseInrPipe
+
+Custom Pipe Implementation
+@Ingectable()
+annotated
+must
+implement
+generric
+interface
+therefore
+every
+will
+
+Custom Pipe Implementation 
+• Pipes are classes annotated with the @Injectable() decorator. 
+• Pipes must implement the PipeTransform generic interface. Therefore, every pipe must have a transform() method. This method will be called by NestJS to process the arguments. 
+• The transform() method accepts two parameters: 
+    value: the value of the processed argument. metadata (optional): an object containing metadata about the argument. 
+• Whatever is returned from the transform() method will be passed on to the 
+    route handler. Exceptions will be sent back to the client. 
+• Pipes can be consumed in different ways. 
+
+found
+
+such as splicing and so on
+
+allowed
+Status
+continue
+defining
+properties
+which
+primary
+generated
+tells type
+automatically
+finally
+
+I.D.新しいタスクを作成するたびに、自動的に生成され、増分されます。
