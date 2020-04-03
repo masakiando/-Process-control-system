@@ -81,3 +81,8 @@ automatically
 finally
 
 I.D.新しいタスクを作成するたびに、自動的に生成され、増分されます。
+
+private
+Inject
+affected:
+Many
