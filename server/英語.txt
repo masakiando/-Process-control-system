@@ -86,3 +86,13 @@ private
 Inject
 affected:
 Many
+weak
+credentials
+strategy
+
+
+
+
+top
+Sercret
+51
