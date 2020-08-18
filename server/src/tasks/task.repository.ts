@@ -9,7 +9,7 @@ import { User } from '../auth/user.entity';
 @EntityRepository(Task)
 export class TaskRepository extends Repository<Task> {
     private logger = new Logger('TaskRepository');
-    
+
     async getTask(
             filterDto: GetTasksFilterDto,
             user: User,
@@ -38,7 +38,7 @@ export class TaskRepository extends Repository<Task> {
 
     async createTask(createTaskDto: CreateTaskDto, user: User): Promise<Task> {
         const { title, description } = createTaskDto;
-        
+
         const task = new Task();
         task.title = title;
         task.description = description;
@@ -55,6 +55,6 @@ export class TaskRepository extends Repository<Task> {
 
         delete task.user;
 
-        return task; 
+        return task;
     }
 }
